@@ -11,10 +11,20 @@
 
     //ENTRADA
 
+    let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    let Final = [];
     
     //PROCESSAMENTO
 
+    for (let Liguais = 0; Liguais < listaDeLetras.length; Liguais++) {
+        const letras = listaDeLetras[Liguais].toLowerCase();
+        if (Final.includes(letras) == false) {
+            Final.push(letras)
+        }
+    }
     
     //SAÍDA
+
+    alert(letras);
 
 </script>
