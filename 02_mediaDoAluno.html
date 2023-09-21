@@ -8,16 +8,18 @@
 
     //ENTRADA
     
-    const notas = prompt("Insira quantas notas o aluno obteve:").trim()
-    const Tnotas = prompt("Quais foram as notas dos alunos:")
+    const notas = Number(prompt("Quantas notas o aluno obteve?"));
 
     //PROCESSAMENTO
-    
-    for (let notas = 0; notas < array.length; notas++) {
-        const element = array[notas];
-        
+    let soma = 0;
+
+    for (let index = 1; index <= notas; notas++) {
+        const nt = Number(prompt(`Qual a nota do aluno?`));
+        soma = soma + nt;        
     }
 
-    //SAÍDA
+    let media = soma / notas;
 
+    //SAÍDA
+    alert(`A média do aluno foi de ${media.toFixed(2)}.`);
 </script>
