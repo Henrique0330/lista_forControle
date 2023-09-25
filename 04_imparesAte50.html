@@ -7,10 +7,19 @@
 
     //ENTRADA
 
+    let NÍmpares = [];
 
     //PROCESSAMENTO
 
+    for (let i = 0; i <= 50;  i++) {
+        const element = array[i];
+        if((i % 2) != 0){
+            NÍmpares.push(i)
+        }
+    }
 
     //SAÍDA
+
+    alert(`Esse são os números ímpares de 1 á 50 ${NÍmpares.join((", "))}`)
 
 </script>
