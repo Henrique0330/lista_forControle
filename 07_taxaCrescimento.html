@@ -6,11 +6,16 @@
     */
 
     //ENTRADA
-
-    
+    let popInicial = 80000;
+    let popFinal = 200000;
+    let anos = 0;
+     
     //PROCESSAMENTO
-
+    for (let contador = 1; popInicial <= popFinal; contador++) {
+        popInicial = popInicial + (popInicial * 0.03);
+        anos = contador;
+    }
     
     //SAÍDA
-
+    alert(`Serão necessários ${anos} anos para que a população atinja 200 mil habitantes!`);
 </script>

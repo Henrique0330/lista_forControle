@@ -7,10 +7,22 @@
 
     //ENTRADA
 
+    let N = parseFloat(prompt(`Insira um número`).trim());
+    let NPrimo = 0;
 
     //PROCESSAMENTO
 
-
+    for (let i = 0; i < N; i++) {
+        if(N % 1 == 0){
+            NPrimo++
+        }
+    }
+    if(NPrimo > 2){
+        alert(`Esse número não é primo`);
+    }
+    else{
+        alert(`Esse número é primo`)
+    }
     //SAÍDA
 
 </script>

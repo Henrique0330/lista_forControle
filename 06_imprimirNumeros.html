@@ -7,10 +7,24 @@
 
     //ENTRADA
 
-    
+    let NInicial = parseFloat(prompt(`Insira um primeiro número`).trim())
+    let NFinal = parseFloat(prompt(`Insira o segundo número - (DIFERENTE DO PRIMEIRO)`).trim())
+    let NPares = [];
+    let NImpares = [];
+
     //PROCESSAMENTO
 
-    
+    for (let i = NInicial; i <= NFinal; i++) {
+        if (i % 2 == 0) {
+            NPares.push(i)
+        }
+        else {
+            NImpares.push(i)
+        }
+    }
+
     //SAÍDA
+
+    alert(`Números pares: ${NPares} \n Números ímpares: ${NImpares}`)
 
 </script>
