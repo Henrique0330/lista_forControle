@@ -7,10 +7,24 @@
 
     //ENTRADA
 
-    
+    let P = 50000;
+    let pop5Anos = 0;
+    let pop10Anos = 0;
+
     //PROCESSAMENTO
-    
+
+    for (let i = 1; i <= 10; i++) {
+        P = P * 1.015;
+        if (i == 5) {
+            pop5Anos = P;
+        }
+        if (i == 10) {
+            pop10Anos = P;
+        }
+    }
 
     //SAÍDA
+
+    alert(`O prazo da população para 5 anos vai ser de: ${(pop5Anos).toFixed(0)} \nO prazo da população para 10 anos vai ser de: ${(pop10Anos).toFixed(0)} `)
 
 </script>

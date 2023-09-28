@@ -9,10 +9,35 @@
 
     //ENTRADA
 
+    const candidato1 = prompt("Insira o nome do primeiro candidato a representante da sala").toUpperCase();
+    const candidato2 = prompt("Insira o nome do segundo candidato a representante da sala").toUpperCase();
+    const candidato3 = prompt("Insira o nome do terceiro candidato a representante da sala").toUpperCase();
+    const QAlunos = prompt("Insira a quantidade de alunos que á na sala");
+    let cand1 = 0;
+    let cand2 = 0;
+    let cand3 = 0;
 
     //PROCESSAMENTO
 
+    for (let i = 1; i <= QAlunos; i++) {
+        const votação = prompt(`Você vai votar em qual candidato: \n1 - ${candidato1} \n2 - ${candidato2} \n3 - ${candidato3}`)
+        if (votação == 1) {
+            cand1++
+        }
+        else if (votação == 2) {
+            cand2++
+        }
+        else if (votação == 3){
+            cand3++
+        }
+    }
 
+    let porcentagem = QAlunos / 100
+    let porcentagem1 = cand1 / porcentagem
+    let porcentagem2 = cand2 / porcentagem
+    let porcentagem3 = cand3 / porcentagem
     //SAÍDA
+
+    alert(`O candidato ${candidato1} teve ${cand1} votos e ficou com ${porcentagem1}% de votos \nO candidato ${candidato2} teve ${cand2} votos e ficou com ${porcentagem2}% de votos \nO candidato ${candidato3} teve ${cand3} votos e ficou com ${porcentagem3}% de votos`)
 
 </script>
